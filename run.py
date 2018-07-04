@@ -1,12 +1,12 @@
 from app import create_app, db  # this is the app package in the app init.py file create_app is a function, db is out db instance
 from app.auth.models import User
 
-if __name__ == '__main__':
-    flask_app = create_app('prod')# create_app  a function we created in the app/init file
+#if __name__ == '__main__': # remove this as it is not needed in prod
+flask_app = create_app('prod')# create_app  a function we created in the app/init file
 
 
-    with flask_app.app_context(): # app_context is a method available inside flask insance (we call app). See below
-        db.create_all()  # these creates all db-tables
+with flask_app.app_context(): # app_context is a method available inside flask insance (we call app). See below
+    db.create_all()  # these creates all db-tables
 
         # if not User.query.filter_by(user_name='harry').first(): # if harry does not already exist create this default user
         #     User.create_user(user='harry', email='harry@potter.com', password='secret')
