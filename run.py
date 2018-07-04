@@ -14,6 +14,7 @@ with flask_app.app_context(): # app_context is a method available inside flask i
 
     #flask_app.run(debug=True, port=5000) # use flask instance to run the application
     flask_app.run(debug=False, port=5000)
+    #
 
     # This whole with statements just tells flask to yuse the current app context to create the db tables
     #This is import when using packages because you are dealing with multiple applications in one project
