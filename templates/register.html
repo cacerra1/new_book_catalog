@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+</head>
+<body>
+    {% block content %}
+        <h4>register here</h4>
+        <div>
+            <form action="/register" method="post">
+                <div class="form-group">
+                    {‌{ form.name.label }}
+                    {‌{ form.name }}
+                </div>
+ 
+                <div class="form-group">
+                    {‌{ form.email.label }}
+                    {‌{ form.email }}
+                </div>
+ 
+                <div class="form-group">
+                    {‌{ form.submit(class='btn btn-primary') }}
+                </div>
+            </form>
+ 
+            {% if (name) and (email) %}
+                <p>hello {‌{ name }}</p>
+                <p>your email {‌{ email }}</p>
+            {% endif %}
+        </div>
+    {% endblock %}
+</body>
+</html>
