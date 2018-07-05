@@ -13,7 +13,7 @@ with flask_app.app_context(): # app_context is a method available inside flask i
             # if harry does exit it will by bypass this and just run the app
 
     #flask_app.run(debug=True, port=5000) # use flask instance to run the application
-    flask_app.run(debug=False, port=5000)
+    flask_app.run( )
     #
 
     # This whole with statements just tells flask to yuse the current app context to create the db tables
