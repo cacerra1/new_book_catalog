@@ -5,7 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_bootstrap import Bootstrap
 from flask_login import LoginManager
 from flask_bcrypt import Bcrypt  # this is for bcrypt hashing  # see below
-#from flask_heroku import Heroku
+from flask_heroku import Heroku
 
 db = SQLAlchemy()
 bootstrap = Bootstrap()
