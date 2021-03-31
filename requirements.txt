@@ -41,7 +41,7 @@ jupyter-console==5.2.0
 jupyter-core==4.4.0
 Kivy-Garden==0.1.4
 kiwisolver==1.0.1
-lxml==4.2.1
+lxml==4.6.3
 macholib==1.9
 MarkupSafe==1.0
 matplotlib==2.2.2
